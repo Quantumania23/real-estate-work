@@ -415,11 +415,126 @@ button {
 }
 
 /* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+.swiper-button-next{
+  right: calc(50% - 3rem);
+}
+
+
 
 
 /* VALUE */
+.value__container{
+  row-gap: 3rem;
+}
 
+.value__images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
+.value__orbe{
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.value__img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+.value__description{
+  font-size: var(--small-font-size);
+  margin: 2rem;
+}
+
+.value__according{
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.value__according-item{
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  padding: 1rem .75rem;
+}
+
+.value__according-header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value__according-icon{
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: .25rem;
+  font-size: 18px;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+
+.value__according-title{
+  font-size: var(--small-font-size);
+}
+
+.value__according-arrow{
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+.value__according-arrow i{
+  transition: .4s;
+}
+
+.value__according-description{
+  font-size: var(--smaller-font-size);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
+.value__according-content{
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease;
+}
 /*Rotate icon and add shadows*/
 
 

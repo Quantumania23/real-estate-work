@@ -19,7 +19,9 @@
     />
 
     <!--SWIPER CSS -->
-    <link rel="stylesheet" href="" />
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
     <!--CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -150,11 +152,12 @@
       <section class="popular section" id="popular">
         <div class="container">
           <span class="section__subtitle">Best Choice</span>
-          <h2 class="section__title">Popular Residences <span>.</span></h2>
+          <h2 class="section__title">Popular Residences <span>.</span>
+          </h2>
 
-          <div class="popular__container">
-            <div>
-              <article class="popular__card">
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets/img/popular1.jpg"
                   alt=""
@@ -173,7 +176,7 @@
                 </div>
 
               </article>
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets/img/popular2.jpg"
                   alt=""
@@ -192,7 +195,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets/img/popular3.jpg"
                   alt=""
@@ -211,7 +214,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets/img/popular4.jpg"
                   alt=""
@@ -230,7 +233,7 @@
                 </div>
               </article>
 
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets/img/popular5.jpg"
                   alt=""
@@ -249,12 +252,125 @@
                 </div>
               </article>
             </div>
+
+            <div class="swiper-button-next">
+              <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class='bx bx-chevron-left'></i>
+            </div>
           </div>
         </div>
       </section>
 
       <!--VALUE -->
-      <section class="value section" id="value"></section>
+      <section class="value section" id="value">
+        <div class="value__container container grid">
+          <div class="value__images">
+            <div class="value__orbe"></div>
+
+            <div class="value__img">
+              <img src="assets/img/value.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="value__content">
+            <div class="value__data">
+              <span class="section__subtitle">Our Value</span>
+              <h2 class="section__title">
+                Value We Give To You <span>.</span>
+              </h2>
+              <p class="value__description">
+                We are always ready to help, by providing the best service for you.
+                We believe a good place to live can make your life better
+              </p>
+            </div>
+
+            <div class="value__according">
+              <div class="value__according-item">
+                <header class="value__according-header">
+                  <i class='bx bx-shield value__according-icon'></i>
+                  <h3 class="value__according-title">
+                    Best interest rates on the market
+                  </h3>
+                  <div class="value__according-arrow">
+                    <i class='bx bxs-down-arrow'></i>
+                  </div>
+                </header>
+
+                <div class="value__according-content">
+                  <p class="value__according-description">
+                    The price we provide is the best for you,
+                    We guarantee no price changes on your property due
+                    to various unexpected costs that may accrue.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__according-item">
+                <header class="value__according-header">
+                  <i class='bx bxs-x-square value__according-icon'></i>
+                  <h3 class="value__according-title">
+                    Prevent unstable prices
+                  </h3>
+                  <div class="value__according-arrow">
+                    <i class='bx bxs-down-arrow'></i>
+                  </div>
+                </header>
+
+                <div class="value__according-content">
+                  <p class="value__according-description">
+                    The price we provide is the best for you,
+                    We guarantee no price changes on your property due
+                    to various unexpected costs that may accrue.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__according-item">
+                <header class="value__according-header">
+                  <i class='bx bxs-bar-chart-square value__according-icon'></i>
+                  <h3 class="value__according-title">
+                    Best prices on the market
+                  </h3>
+                  <div class="value__according-arrow">
+                    <i class='bx bxs-down-arrow'></i>
+                  </div>
+                </header>
+
+                <div class="value__according-content">
+                  <p class="value__according-description">
+                    The price we provide is the best for you,
+                    We guarantee no price changes on your property due
+                    to various unexpected costs that may accrue.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__according-item">
+                <header class="value__according-header">
+                  <i class='bx bxs-check-square value__according-icon'></i>
+                  <h3 class="value__according-title">
+                  Security of your data
+                  </h3>
+                  <div class="value__according-arrow">
+                    <i class='bx bxs-down-arrow'></i>
+                  </div>
+                </header>
+
+                <div class="value__according-content">
+                  <p class="value__according-description">
+                    The price we provide is the best for you,
+                    We guarantee no price changes on your property due
+                    to various unexpected costs that may accrue.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--CONTACT -->
       <section class="contact section" id="contact"></section>
@@ -272,7 +388,9 @@
     <script src=""></script>
 
     <!--SWIPER JS -->
-    <script src=""></script>
+    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
     <!--MAIN JS -->
     <script src="assets/js/main.js"></script>
